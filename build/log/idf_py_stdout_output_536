@@ -1,0 +1,501 @@
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj 
+ccache D:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/EspressifIDF/workspace/bridge/build/config -ID:/EspressifIDF/workspace/bridge/main -ID:/EspressifIDF/components/newlib/platform_include -ID:/EspressifIDF/components/freertos/config/include -ID:/EspressifIDF/components/freertos/config/include/freertos -ID:/EspressifIDF/components/freertos/config/xtensa/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/EspressifIDF/components/freertos/esp_additions/include -ID:/EspressifIDF/components/esp_hw_support/include -ID:/EspressifIDF/components/esp_hw_support/include/soc -ID:/EspressifIDF/components/esp_hw_support/include/soc/esp32 -ID:/EspressifIDF/components/esp_hw_support/port/esp32/. -ID:/EspressifIDF/components/heap/include -ID:/EspressifIDF/components/log/include -ID:/EspressifIDF/components/soc/include -ID:/EspressifIDF/components/soc/esp32 -ID:/EspressifIDF/components/soc/esp32/include -ID:/EspressifIDF/components/hal/platform_port/include -ID:/EspressifIDF/components/hal/esp32/include -ID:/EspressifIDF/components/hal/include -ID:/EspressifIDF/components/esp_rom/include -ID:/EspressifIDF/components/esp_rom/include/esp32 -ID:/EspressifIDF/components/esp_rom/esp32 -ID:/EspressifIDF/components/esp_common/include -ID:/EspressifIDF/components/esp_system/include -ID:/EspressifIDF/components/esp_system/port/soc -ID:/EspressifIDF/components/esp_system/port/include/private -ID:/EspressifIDF/components/xtensa/esp32/include -ID:/EspressifIDF/components/xtensa/include -ID:/EspressifIDF/components/xtensa/deprecated_include -ID:/EspressifIDF/components/lwip/include -ID:/EspressifIDF/components/lwip/include/apps -ID:/EspressifIDF/components/lwip/include/apps/sntp -ID:/EspressifIDF/components/lwip/lwip/src/include -ID:/EspressifIDF/components/lwip/port/include -ID:/EspressifIDF/components/lwip/port/freertos/include -ID:/EspressifIDF/components/lwip/port/esp32xx/include -ID:/EspressifIDF/components/lwip/port/esp32xx/include/arch -ID:/EspressifIDF/components/lwip/port/esp32xx/include/sys -ID:/EspressifIDF/examples/ethernet/basic/components/ethernet_init -ID:/EspressifIDF/components/esp_ringbuf/include -ID:/EspressifIDF/components/efuse/include -ID:/EspressifIDF/components/efuse/esp32/include -ID:/EspressifIDF/components/esp_mm/include -ID:/EspressifIDF/components/driver/include -ID:/EspressifIDF/components/driver/deprecated -ID:/EspressifIDF/components/driver/analog_comparator/include -ID:/EspressifIDF/components/driver/dac/include -ID:/EspressifIDF/components/driver/gpio/include -ID:/EspressifIDF/components/driver/gptimer/include -ID:/EspressifIDF/components/driver/i2c/include -ID:/EspressifIDF/components/driver/i2s/include -ID:/EspressifIDF/components/driver/ledc/include -ID:/EspressifIDF/components/driver/mcpwm/include -ID:/EspressifIDF/components/driver/parlio/include -ID:/EspressifIDF/components/driver/pcnt/include -ID:/EspressifIDF/components/driver/rmt/include -ID:/EspressifIDF/components/driver/sdio_slave/include -ID:/EspressifIDF/components/driver/sdmmc/include -ID:/EspressifIDF/components/driver/sigma_delta/include -ID:/EspressifIDF/components/driver/spi/include -ID:/EspressifIDF/components/driver/temperature_sensor/include -ID:/EspressifIDF/components/driver/touch_sensor/include -ID:/EspressifIDF/components/driver/twai/include -ID:/EspressifIDF/components/driver/uart/include -ID:/EspressifIDF/components/driver/usb_serial_jtag/include -ID:/EspressifIDF/components/driver/touch_sensor/esp32/include -ID:/EspressifIDF/components/esp_pm/include -ID:/EspressifIDF/components/mbedtls/port/include -ID:/EspressifIDF/components/mbedtls/mbedtls/include -ID:/EspressifIDF/components/mbedtls/mbedtls/library -ID:/EspressifIDF/components/mbedtls/esp_crt_bundle/include -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/EspressifIDF/components/esp_bootloader_format/include -ID:/EspressifIDF/components/esp_app_format/include -ID:/EspressifIDF/components/bootloader_support/include -ID:/EspressifIDF/components/bootloader_support/bootloader_flash/include -ID:/EspressifIDF/components/esp_partition/include -ID:/EspressifIDF/components/app_update/include -ID:/EspressifIDF/components/spi_flash/include -ID:/EspressifIDF/components/pthread/include -ID:/EspressifIDF/components/esp_timer/include -ID:/EspressifIDF/components/app_trace/include -ID:/EspressifIDF/components/esp_event/include -ID:/EspressifIDF/components/nvs_flash/include -ID:/EspressifIDF/components/esp_phy/include -ID:/EspressifIDF/components/esp_phy/esp32/include -ID:/EspressifIDF/components/vfs/include -ID:/EspressifIDF/components/esp_netif/include -ID:/EspressifIDF/components/wpa_supplicant/include -ID:/EspressifIDF/components/wpa_supplicant/port/include -ID:/EspressifIDF/components/wpa_supplicant/esp_supplicant/include -ID:/EspressifIDF/components/esp_coex/include -ID:/EspressifIDF/components/esp_wifi/include -ID:/EspressifIDF/components/esp_wifi/wifi_apps/include -ID:/EspressifIDF/components/unity/include -ID:/EspressifIDF/components/unity/unity/src -ID:/EspressifIDF/components/cmock/CMock/src -ID:/EspressifIDF/components/console -ID:/EspressifIDF/components/http_parser -ID:/EspressifIDF/components/esp-tls -ID:/EspressifIDF/components/esp-tls/esp-tls-crypto -ID:/EspressifIDF/components/esp_adc/include -ID:/EspressifIDF/components/esp_adc/interface -ID:/EspressifIDF/components/esp_adc/esp32/include -ID:/EspressifIDF/components/esp_adc/deprecated/include -ID:/EspressifIDF/components/esp_eth/include -ID:/EspressifIDF/components/esp_gdbstub/include -ID:/EspressifIDF/components/esp_hid/include -ID:/EspressifIDF/components/tcp_transport/include -ID:/EspressifIDF/components/esp_http_client/include -ID:/EspressifIDF/components/esp_http_server/include -ID:/EspressifIDF/components/esp_https_ota/include -ID:/EspressifIDF/components/esp_psram/include -ID:/EspressifIDF/components/esp_lcd/include -ID:/EspressifIDF/components/esp_lcd/interface -ID:/EspressifIDF/components/protobuf-c/protobuf-c -ID:/EspressifIDF/components/protocomm/include/common -ID:/EspressifIDF/components/protocomm/include/security -ID:/EspressifIDF/components/protocomm/include/transports -ID:/EspressifIDF/components/protocomm/include/crypto/srp6a -ID:/EspressifIDF/components/esp_local_ctrl/include -ID:/EspressifIDF/components/espcoredump/include -ID:/EspressifIDF/components/espcoredump/include/port/xtensa -ID:/EspressifIDF/components/wear_levelling/include -ID:/EspressifIDF/components/sdmmc/include -ID:/EspressifIDF/components/fatfs/diskio -ID:/EspressifIDF/components/fatfs/src -ID:/EspressifIDF/components/fatfs/vfs -ID:/EspressifIDF/components/idf_test/include -ID:/EspressifIDF/components/idf_test/include/esp32 -ID:/EspressifIDF/components/ieee802154/include -ID:/EspressifIDF/components/json/cJSON -ID:/EspressifIDF/components/mqtt/esp-mqtt/include -ID:/EspressifIDF/components/nvs_sec_provider/include -ID:/EspressifIDF/components/perfmon/include -ID:/EspressifIDF/components/spiffs/include -ID:/EspressifIDF/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/EspressifIDF/workspace/bridge=. -fmacro-prefix-map=D:/EspressifIDF=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\bridge_example_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj -c D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:5: error: unknown type name 'ip_event_got_ip_t'
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+      |     ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:33: error: 'ip_event_got_ip_t' undeclared here (not in a function)
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+      |                                 ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:52: error: expected expression before ')' token
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+      |                                                    ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:2:18: error: expected ')' before string constant
+    2 |     ESP_LOGI(TAG, "Ethernet Got IP Address");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:3:18: error: expected ')' before string constant
+    3 |     ESP_LOGI(TAG, "~~~~~~~~~~~");
+      |                  ^~~~~~~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:4:18: error: expected ')' before string constant
+    4 |     ESP_LOGI(TAG, "ETHIP:" IPSTR, IP2STR(&event->ip_info.ip));
+      |                  ^~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:5:18: error: expected ')' before string constant
+    5 |     ESP_LOGI(TAG, "ETHMASK:" IPSTR, IP2STR(&event->ip_info.netmask));
+      |                  ^~~~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:6:18: error: expected ')' before string constant
+    6 |     ESP_LOGI(TAG, "ETHGW:" IPSTR, IP2STR(&event->ip_info.gw));
+      |                  ^~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:7:18: error: expected ')' before string constant
+    7 |     ESP_LOGI(TAG, "~~~~~~~~~~~");
+      |                  ^~~~~~~~~~~~~~
+      |                  )
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:8:1: error: expected identifier or '(' before '}' token
+    8 | }
+      | ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:10:1: error: unknown type name 'esp_netif_t'
+   10 | esp_netif_t *wifi_init_sta(void)
+      | ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'wifi_init_sta':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:12:5: error: unknown type name 'esp_netif_t'
+   12 |     esp_netif_t *esp_netif_sta = esp_netif_create_default_wifi_sta();
+      |     ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:12:34: error: implicit declaration of function 'esp_netif_create_default_wifi_sta' [-Werror=implicit-function-declaration]
+   12 |     esp_netif_t *esp_netif_sta = esp_netif_create_default_wifi_sta();
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:12:34: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:14:5: error: unknown type name 'wifi_config_t'
+   14 |     wifi_config_t wifi_sta_config = {
+      |     ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:15:13: error: field name not in record or union initializer
+   15 |             .sta = {
+      |             ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:15:13: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:15:13: warning: braces around scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:15:13: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:16:17: error: field name not in record or union initializer
+   16 |                 .ssid = "PODA_9431",
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:16:17: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:16:25: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   16 |                 .ssid = "PODA_9431",
+      |                         ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:16:25: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:17:17: error: field name not in record or union initializer
+   17 |                 .password = "25FBD7A3",
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:17:17: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:17:29: warning: excess elements in scalar initializer
+   17 |                 .password = "25FBD7A3",
+      |                             ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:17:29: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:17: error: field name not in record or union initializer
+   18 |                 .scan_method = WIFI_ALL_CHANNEL_SCAN,
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:17: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:32: error: 'WIFI_ALL_CHANNEL_SCAN' undeclared (first use in this function)
+   18 |                 .scan_method = WIFI_ALL_CHANNEL_SCAN,
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:32: note: each undeclared identifier is reported only once for each function it appears in
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:32: warning: excess elements in scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:18:32: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:17: error: field name not in record or union initializer
+   19 |                 .sae_pwe_h2e = WPA3_SAE_PWE_BOTH,
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:17: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:32: error: 'WPA3_SAE_PWE_BOTH' undeclared (first use in this function)
+   19 |                 .sae_pwe_h2e = WPA3_SAE_PWE_BOTH,
+      |                                ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:32: warning: excess elements in scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:32: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:23:5: error: implicit declaration of function 'ESP_ERROR_CHECK' [-Werror=implicit-function-declaration]
+   23 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |     ^~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:23:21: error: implicit declaration of function 'esp_wifi_set_mode' [-Werror=implicit-function-declaration]
+   23 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                     ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:23:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+   23 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                                       ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:24:21: error: implicit declaration of function 'esp_wifi_set_config' [-Werror=implicit-function-declaration]
+   24 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_sta_config));
+      |                     ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:24:41: error: 'ESP_IF_WIFI_STA' undeclared (first use in this function)
+   24 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_sta_config));
+      |                                         ^~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:26:5: error: implicit declaration of function 'ESP_LOGI' [-Werror=implicit-function-declaration]
+   26 |     ESP_LOGI(TAG_STA, "wifi_init_sta finished.");
+      |     ^~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:26:14: error: 'TAG_STA' undeclared (first use in this function)
+   26 |     ESP_LOGI(TAG_STA, "wifi_init_sta finished.");
+      |              ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:30:1: error: unknown type name 'esp_netif_t'
+   30 | esp_netif_t *eth_init(void)
+      | ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'eth_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:33:5: error: unknown type name 'uint8_t'
+   33 |     uint8_t eth_port_cnt = 0;
+      |     ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:34:5: error: unknown type name 'esp_eth_handle_t'
+   34 |     esp_eth_handle_t *eth_handles;
+      |     ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:35:21: error: implicit declaration of function 'example_eth_init' [-Werror=implicit-function-declaration]
+   35 |     ESP_ERROR_CHECK(example_eth_init(&eth_handles, &eth_port_cnt));
+      |                     ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:5: error: unknown type name 'uint8_t'
+   38 |     uint8_t common_mac_addr[ETH_ADDR_LEN];
+      |     ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:5: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:29: error: 'ETH_ADDR_LEN' undeclared (first use in this function)
+   38 |     uint8_t common_mac_addr[ETH_ADDR_LEN];
+      |                             ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:39:21: error: implicit declaration of function 'esp_read_mac' [-Werror=implicit-function-declaration]
+   39 |     ESP_ERROR_CHECK(esp_read_mac(common_mac_addr, ESP_MAC_ETH));
+      |                     ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:39:51: error: 'ESP_MAC_ETH' undeclared (first use in this function)
+   39 |     ESP_ERROR_CHECK(esp_read_mac(common_mac_addr, ESP_MAC_ETH));
+      |                                                   ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:41:25: error: implicit declaration of function 'esp_eth_ioctl' [-Werror=implicit-function-declaration]
+   41 |         ESP_ERROR_CHECK(esp_eth_ioctl(eth_handles[i], ETH_CMD_S_MAC_ADDR, common_mac_addr));
+      |                         ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:41:55: error: 'ETH_CMD_S_MAC_ADDR' undeclared (first use in this function)
+   41 |         ESP_ERROR_CHECK(esp_eth_ioctl(eth_handles[i], ETH_CMD_S_MAC_ADDR, common_mac_addr));
+      |                                                       ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:45:21: error: implicit declaration of function 'esp_netif_init' [-Werror=implicit-function-declaration]
+   45 |     ESP_ERROR_CHECK(esp_netif_init());
+      |                     ^~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:5: error: unknown type name 'esp_netif_t'
+   47 |     esp_netif_t **eth_netifs = calloc(eth_port_cnt, sizeof(esp_netif_t *));
+      |     ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:32: error: implicit declaration of function 'calloc' [-Werror=implicit-function-declaration]
+   47 |     esp_netif_t **eth_netifs = calloc(eth_port_cnt, sizeof(esp_netif_t *));
+      |                                ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:1: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+  +++ |+#include <stdlib.h>
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:32: warning: incompatible implicit declaration of built-in function 'calloc' [-Wbuiltin-declaration-mismatch]
+   47 |     esp_netif_t **eth_netifs = calloc(eth_port_cnt, sizeof(esp_netif_t *));
+      |                                ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:32: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:60: error: 'esp_netif_t' undeclared (first use in this function)
+   47 |     esp_netif_t **eth_netifs = calloc(eth_port_cnt, sizeof(esp_netif_t *));
+      |                                                            ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:47:73: error: expected expression before ')' token
+   47 |     esp_netif_t **eth_netifs = calloc(eth_port_cnt, sizeof(esp_netif_t *));
+      |                                                                         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:48:5: error: unknown type name 'esp_netif_inherent_config_t'
+   48 |     esp_netif_inherent_config_t esp_netif_config = ESP_NETIF_INHERENT_DEFAULT_ETH();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:48:52: error: implicit declaration of function 'ESP_NETIF_INHERENT_DEFAULT_ETH' [-Werror=implicit-function-declaration]
+   48 |     esp_netif_inherent_config_t esp_netif_config = ESP_NETIF_INHERENT_DEFAULT_ETH();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:5: error: unknown type name 'esp_netif_config_t'
+   49 |     esp_netif_config_t netif_cfg = {
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:50:9: error: field name not in record or union initializer
+   50 |         .base = &esp_netif_config,
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:50:9: note: (near initialization for 'netif_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:50:17: warning: initialization of 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   50 |         .base = &esp_netif_config,
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:50:17: note: (near initialization for 'netif_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:51:9: error: field name not in record or union initializer
+   51 |         .stack = ESP_NETIF_NETSTACK_DEFAULT_ETH,
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:51:9: note: (near initialization for 'netif_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:51:18: error: 'ESP_NETIF_NETSTACK_DEFAULT_ETH' undeclared (first use in this function)
+   51 |         .stack = ESP_NETIF_NETSTACK_DEFAULT_ETH,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:51:18: warning: excess elements in scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:51:18: note: (near initialization for 'netif_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:57:9: error: implicit declaration of function 'itoa' [-Werror=implicit-function-declaration]
+   57 |         itoa(i, num_str, 10);
+      |         ^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:9: error: implicit declaration of function 'strcat' [-Werror=implicit-function-declaration]
+   58 |         strcat(strcpy(if_key_str, "ETH_"), num_str);
+      |         ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:1: note: include '<string.h>' or provide a declaration of 'strcat'
+  +++ |+#include <string.h>
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:9: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+   58 |         strcat(strcpy(if_key_str, "ETH_"), num_str);
+      |         ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:9: note: include '<string.h>' or provide a declaration of 'strcat'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:16: error: implicit declaration of function 'strcpy' [-Werror=implicit-function-declaration]
+   58 |         strcat(strcpy(if_key_str, "ETH_"), num_str);
+      |                ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:16: note: include '<string.h>' or provide a declaration of 'strcpy'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:16: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:58:16: note: include '<string.h>' or provide a declaration of 'strcpy'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:25: error: request for member 'if_key' in something not a structure or union
+   60 |         esp_netif_config.if_key = if_key_str;
+      |                         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:25: error: request for member 'if_desc' in something not a structure or union
+   61 |         esp_netif_config.if_desc = if_desc_str;
+      |                         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:25: error: request for member 'route_prio' in something not a structure or union
+   62 |         esp_netif_config.route_prio = 50 - i;
+      |                         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:63:25: error: request for member 'flags' in something not a structure or union
+   63 |         esp_netif_config.flags = 0; // esp-netif flags need to be zero when port's to be bridged
+      |                         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:65:25: error: implicit declaration of function 'esp_netif_new' [-Werror=implicit-function-declaration]
+   65 |         eth_netifs[i] = esp_netif_new(&netif_cfg);
+      |                         ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:65:23: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   65 |         eth_netifs[i] = esp_netif_new(&netif_cfg);
+      |                       ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:68:25: error: implicit declaration of function 'esp_netif_attach' [-Werror=implicit-function-declaration]
+   68 |         ESP_ERROR_CHECK(esp_netif_attach(eth_netifs[i], esp_eth_new_netif_glue(eth_handles[i])));
+      |                         ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:68:57: error: implicit declaration of function 'esp_eth_new_netif_glue' [-Werror=implicit-function-declaration]
+   68 |         ESP_ERROR_CHECK(esp_netif_attach(eth_netifs[i], esp_eth_new_netif_glue(eth_handles[i])));
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:69:25: error: implicit declaration of function 'esp_eth_start' [-Werror=implicit-function-declaration]
+   69 |         ESP_ERROR_CHECK(esp_eth_start(eth_handles[i]));
+      |                         ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:73:5: error: unknown type name 'esp_netif_inherent_config_t'
+   73 |     esp_netif_inherent_config_t esp_netif_br_config = ESP_NETIF_INHERENT_DEFAULT_BR();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:73:55: error: implicit declaration of function 'ESP_NETIF_INHERENT_DEFAULT_BR' [-Werror=implicit-function-declaration]
+   73 |     esp_netif_inherent_config_t esp_netif_br_config = ESP_NETIF_INHERENT_DEFAULT_BR();
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:74:5: error: unknown type name 'esp_netif_config_t'
+   74 |     esp_netif_config_t netif_br_cfg = {
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:75:9: error: field name not in record or union initializer
+   75 |         .base = &esp_netif_br_config,
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:75:9: note: (near initialization for 'netif_br_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:75:17: warning: initialization of 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   75 |         .base = &esp_netif_br_config,
+      |                 ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:75:17: note: (near initialization for 'netif_br_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:76:9: error: field name not in record or union initializer
+   76 |         .stack = ESP_NETIF_NETSTACK_DEFAULT_BR,
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:76:9: note: (near initialization for 'netif_br_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:76:18: error: 'ESP_NETIF_NETSTACK_DEFAULT_BR' undeclared (first use in this function)
+   76 |         .stack = ESP_NETIF_NETSTACK_DEFAULT_BR,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:76:18: warning: excess elements in scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:76:18: note: (near initialization for 'netif_br_cfg')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:79:5: error: unknown type name 'bridgeif_config_t'
+   79 |     bridgeif_config_t bridgeif_config = {
+      |     ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:80:9: error: field name not in record or union initializer
+   80 |         .max_fdb_dyn_entries = 10, // maximum number of address entries in dynamic forwarding database
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:80:9: note: (near initialization for 'bridgeif_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:9: error: field name not in record or union initializer
+   81 |         .max_fdb_sta_entries = 2,  // maximum number of address entries in static forwarding database
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:9: note: (near initialization for 'bridgeif_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:32: warning: excess elements in scalar initializer
+   81 |         .max_fdb_sta_entries = 2,  // maximum number of address entries in static forwarding database
+      |                                ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:32: note: (near initialization for 'bridgeif_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:82:9: error: field name not in record or union initializer
+   82 |         .max_ports = eth_port_cnt, // maximum number of ports the bridge can consist of
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:82:9: note: (near initialization for 'bridgeif_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:82:22: warning: excess elements in scalar initializer
+   82 |         .max_ports = eth_port_cnt, // maximum number of ports the bridge can consist of
+      |                      ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:82:22: note: (near initialization for 'bridgeif_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:84:24: error: request for member 'bridge_info' in something not a structure or union
+   84 |     esp_netif_br_config.bridge_info = &bridgeif_config;
+      |                        ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:5: error: implicit declaration of function 'memcpy' [-Werror=implicit-function-declaration]
+   86 |     memcpy(esp_netif_br_config.mac, common_mac_addr, ETH_ADDR_LEN);
+      |     ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:31: error: request for member 'mac' in something not a structure or union
+   86 |     memcpy(esp_netif_br_config.mac, common_mac_addr, ETH_ADDR_LEN);
+      |                               ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:89:22: error: 'br_netif' undeclared (first use in this function); did you mean 'eth_netifs'?
+   89 |         esp_netif_t *br_netif = esp_netif_new(&netif_br_cfg);
+      |                      ^~~~~~~~
+      |                      eth_netifs
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:92:9: error: unknown type name 'esp_netif_br_glue_handle_t'
+   92 |         esp_netif_br_glue_handle_t netif_br_glue = esp_netif_br_glue_new();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:92:52: error: implicit declaration of function 'esp_netif_br_glue_new' [-Werror=implicit-function-declaration]
+   92 |         esp_netif_br_glue_handle_t netif_br_glue = esp_netif_br_glue_new();
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:95:25: error: implicit declaration of function 'esp_netif_br_glue_add_port' [-Werror=implicit-function-declaration]
+   95 |         ESP_ERROR_CHECK(esp_netif_br_glue_add_port(netif_br_glue, eth_netifs[i]));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:102:25: error: implicit declaration of function 'esp_event_handler_register' [-Werror=implicit-function-declaration]
+  102 |         ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:102:52: error: 'ETH_EVENT' undeclared (first use in this function)
+  102 |         ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
+      |                                                    ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:102:63: error: 'ESP_EVENT_ANY_ID' undeclared (first use in this function)
+  102 |         ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
+      |                                                               ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:102:82: error: 'eth_event_handler' undeclared (first use in this function)
+  102 |         ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:102:101: error: 'NULL' undeclared (first use in this function)
+  102 |         ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &eth_event_handler, NULL));
+      |                                                                                                     ^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:1:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+  +++ |+#include <stddef.h>
+    1 |     ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:103:52: error: 'IP_EVENT' undeclared (first use in this function)
+  103 |         ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &got_ip_event_handler, NULL));
+      |                                                    ^~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:103:62: error: 'IP_EVENT_ETH_GOT_IP' undeclared (first use in this function)
+  103 |         ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &got_ip_event_handler, NULL));
+      |                                                              ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:103:84: error: 'got_ip_event_handler' undeclared (first use in this function)
+  103 |         ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, &got_ip_event_handler, NULL));
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:105:25: error: implicit declaration of function 'esp_event_handler_instance_register' [-Werror=implicit-function-declaration]
+  105 |         ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:105:61: error: 'WIFI_EVENT' undeclared (first use in this function)
+  105 |         ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                                                             ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:107:42: error: 'wifi_event_handler' undeclared (first use in this function)
+  107 |                                         &wifi_event_handler,
+      |                                          ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:111:41: error: 'IP_EVENT_STA_GOT_IP' undeclared (first use in this function)
+  111 |                                         IP_EVENT_STA_GOT_IP,
+      |                                         ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:13: warning: unused variable 'common_mac_addr' [-Wunused-variable]
+   38 |     uint8_t common_mac_addr[ETH_ADDR_LEN];
+      |             ^~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:122:5: error: unknown type name 'esp_err_t'
+  122 |     esp_err_t ret = nvs_flash_init();
+      |     ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:122:21: error: implicit declaration of function 'nvs_flash_init' [-Werror=implicit-function-declaration]
+  122 |     esp_err_t ret = nvs_flash_init();
+      |                     ^~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:123:16: error: 'ESP_ERR_NVS_NO_FREE_PAGES' undeclared (first use in this function)
+  123 |     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:123:52: error: 'ESP_ERR_NVS_NEW_VERSION_FOUND' undeclared (first use in this function)
+  123 |     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:124:25: error: implicit declaration of function 'nvs_flash_erase' [-Werror=implicit-function-declaration]
+  124 |         ESP_ERROR_CHECK(nvs_flash_erase());
+      |                         ^~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:130:5: error: 's_wifi_event_group' undeclared (first use in this function)
+  130 |     s_wifi_event_group = xEventGroupCreate();
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:130:26: error: implicit declaration of function 'xEventGroupCreate' [-Werror=implicit-function-declaration]
+  130 |     s_wifi_event_group = xEventGroupCreate();
+      |                          ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:133:21: error: implicit declaration of function 'esp_event_loop_create_default' [-Werror=implicit-function-declaration]
+  133 |     ESP_ERROR_CHECK(esp_event_loop_create_default());
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:134:48: error: 'ETH_EVENT' undeclared (first use in this function)
+  134 |     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:134:59: error: 'ESP_EVENT_ANY_ID' undeclared (first use in this function)
+  134 |     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                           ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:134:78: error: 'wifi_event_handler' undeclared (first use in this function)
+  134 |     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                                              ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:134:98: error: 'NULL' undeclared (first use in this function)
+  134 |     ESP_ERROR_CHECK(esp_event_handler_register(ETH_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                                                                  ^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:134:98: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:135:48: error: 'IP_EVENT' undeclared (first use in this function)
+  135 |     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL));
+      |                                                ^~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:135:58: error: 'IP_EVENT_STA_GOT_IP' undeclared (first use in this function)
+  135 |     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &wifi_event_handler, NULL));
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:138:5: error: unknown type name 'wifi_init_config_t'
+  138 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:138:30: error: implicit declaration of function 'WIFI_INIT_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  138 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:139:21: error: implicit declaration of function 'esp_wifi_init' [-Werror=implicit-function-declaration]
+  139 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |                     ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:140:21: error: implicit declaration of function 'esp_wifi_set_storage' [-Werror=implicit-function-declaration]
+  140 |     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:140:42: error: 'WIFI_STORAGE_RAM' undeclared (first use in this function)
+  140 |     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+      |                                          ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:141:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+  141 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                                       ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:142:14: error: 'TAG_STA' undeclared (first use in this function)
+  142 |     ESP_LOGI(TAG_STA, "ESP_WIFI_MODE_STA");
+      |              ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:143:6: error: unknown type name 'esp_netif_t'
+  143 |      esp_netif_t *esp_netif_sta = wifi_init_sta();
+      |      ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:146:5: error: unknown type name 'esp_netif_t'
+  146 |     esp_netif_t *br_netif = eth_init();
+      |     ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:149:21: error: implicit declaration of function 'esp_wifi_start' [-Werror=implicit-function-declaration]
+  149 |     ESP_ERROR_CHECK(esp_wifi_start());
+      |                     ^~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:152:5: error: unknown type name 'EventBits_t'
+  152 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |     ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:152:24: error: implicit declaration of function 'xEventGroupWaitBits' [-Werror=implicit-function-declaration]
+  152 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |                        ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:153:48: error: 'WIFI_CONNECTED_BIT' undeclared (first use in this function)
+  153 |                                                WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+      |                                                ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:153:69: error: 'WIFI_FAIL_BIT' undeclared (first use in this function)
+  153 |                                                WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+      |                                                                     ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:154:48: error: 'pdFALSE' undeclared (first use in this function)
+  154 |                                                pdFALSE,
+      |                                                ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:156:48: error: 'portMAX_DELAY' undeclared (first use in this function)
+  156 |                                                portMAX_DELAY);
+      |                                                ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:162:25: error: 'EXAMPLE_ESP_WIFI_SSID' undeclared (first use in this function)
+  162 |                         EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:162:48: error: 'EXAMPLE_ESP_WIFI_PASS' undeclared (first use in this function)
+  162 |                         EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:167:13: error: implicit declaration of function 'ESP_LOGE' [-Werror=implicit-function-declaration]
+  167 |             ESP_LOGE(TAG_STA, "UNEXPECTED EVENT");
+      |             ^~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:172:5: error: implicit declaration of function 'esp_netif_set_default_netif' [-Werror=implicit-function-declaration]
+  172 |     esp_netif_set_default_netif(br_netif);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:175:21: error: implicit declaration of function 'esp_netif_napt_enable' [-Werror=implicit-function-declaration]
+  175 |     ESP_ERROR_CHECK(esp_netif_napt_enable(br_netif));
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:178:5: error: unknown type name 'esp_console_repl_t'
+  178 |     esp_console_repl_t *repl = NULL;
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:179:5: error: unknown type name 'esp_console_repl_config_t'
+  179 |     esp_console_repl_config_t repl_config = ESP_CONSOLE_REPL_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:179:45: error: implicit declaration of function 'ESP_CONSOLE_REPL_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  179 |     esp_console_repl_config_t repl_config = ESP_CONSOLE_REPL_CONFIG_DEFAULT();
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:180:16: error: request for member 'prompt' in something not a structure or union
+  180 |     repl_config.prompt = "bridge>";
+      |                ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:183:5: error: unknown type name 'esp_console_dev_uart_config_t'
+  183 |     esp_console_dev_uart_config_t uart_config = ESP_CONSOLE_DEV_UART_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:183:49: error: implicit declaration of function 'ESP_CONSOLE_DEV_UART_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  183 |     esp_console_dev_uart_config_t uart_config = ESP_CONSOLE_DEV_UART_CONFIG_DEFAULT();
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:184:21: error: implicit declaration of function 'esp_console_new_repl_uart' [-Werror=implicit-function-declaration]
+  184 |     ESP_ERROR_CHECK(esp_console_new_repl_uart(&uart_config, &repl_config, &repl));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:143:19: warning: unused variable 'esp_netif_sta' [-Wunused-variable]
+  143 |      esp_netif_t *esp_netif_sta = wifi_init_sta();
+      |                   ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'eth_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:117:1: error: control reaches end of non-void function [-Werror=return-type]
+  117 | }
+      | ^
+cc1.exe: some warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+ninja: build stopped: subcommand failed.

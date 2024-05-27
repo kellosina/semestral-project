@@ -1,0 +1,15 @@
+fatal: detected dubious ownership in repository at 'D:/EspressifIDF/components/openthread/openthread'
+'D:/EspressifIDF/components/openthread/openthread/.git' is owned by:
+	'S-1-5-32-544'
+but the current user is:
+	'S-1-5-21-2763038156-368284365-3480984016-1001'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/EspressifIDF/components/openthread/openthread
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  D:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/EspressifIDF/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+

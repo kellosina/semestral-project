@@ -1,0 +1,15 @@
+dependencies:
+  ethernet_init:
+    component_hash: null
+    source:
+      path: D:\EspressifIDF\examples\ethernet\basic\components\ethernet_init
+      type: local
+    version: '*'
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.1
+manifest_hash: cab13e7c1fae90542bc8e1757f756df26e79631d6815f83b79f63151fdb993bf
+target: esp32
+version: 1.0.0

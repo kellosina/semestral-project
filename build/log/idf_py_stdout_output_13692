@@ -1,0 +1,46 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:250:33: warning: passing argument 1 of 'esp_netif_set_default_netif' from incompatible pointer type [-Wincompatible-pointer-types]
+  250 |     esp_netif_set_default_netif(&br_netif);
+      |                                 ^~~~~~~~~
+      |                                 |
+      |                                 esp_netif_t ** {aka struct esp_netif_obj **}
+In file included from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:6:
+D:/EspressifIDF/components/esp_netif/include/esp_netif.h:276:52: note: expected 'esp_netif_t *' {aka 'struct esp_netif_obj *'} but argument is of type 'esp_netif_t **' {aka 'struct esp_netif_obj **'}
+  276 | esp_err_t esp_netif_set_default_netif(esp_netif_t *esp_netif);
+      |                                       ~~~~~~~~~~~~~^~~~~~~~~
+In file included from D:/EspressifIDF/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from D:/EspressifIDF/components/esp_hw_support/include/esp_cpu.h:20,
+                 from D:/EspressifIDF/components/esp_hw_support/include/spinlock.h:11,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:3:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:253:43: warning: passing argument 1 of 'esp_netif_napt_enable' from incompatible pointer type [-Wincompatible-pointer-types]
+  253 |     ESP_ERROR_CHECK(esp_netif_napt_enable(&br_netif));
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           esp_netif_t ** {aka struct esp_netif_obj **}
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/components/esp_netif/include/esp_netif.h:540:46: note: expected 'esp_netif_t *' {aka 'struct esp_netif_obj *'} but argument is of type 'esp_netif_t **' {aka 'struct esp_netif_obj **'}
+  540 | esp_err_t esp_netif_napt_enable(esp_netif_t *esp_netif);
+      |                                 ~~~~~~~~~~~~~^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:221:19: warning: unused variable 'esp_netif_sta' [-Wunused-variable]
+  221 |      esp_netif_t *esp_netif_sta = wifi_init_sta();
+      |                   ^~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable bridge.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/7] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xddce0 bytes. Smallest app partition is 0x100000 bytes. 0x22320 bytes (13%) free.

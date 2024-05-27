@@ -1,0 +1,33 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:39:28: warning: 'EXAMPLE_ESP_WIFI_PASS' defined but not used [-Wunused-variable]
+   39 |         static const char *EXAMPLE_ESP_WIFI_PASS = "25FBD7A3";
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:28: warning: 'EXAMPLE_ESP_WIFI_SSID' defined but not used [-Wunused-variable]
+   38 |         static const char *EXAMPLE_ESP_WIFI_SSID = "PODA_9431";
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:37:28: warning: 'TAG_AP' defined but not used [-Wunused-variable]
+   37 |         static const char *TAG_AP = "WiFi SoftAP";
+      |                            ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:36:28: warning: 'TAG_STA' defined but not used [-Wunused-variable]
+   36 |         static const char *TAG_STA = "WiFi Sta";
+      |                            ^~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:34:20: warning: 's_retry_num' defined but not used [-Wunused-variable]
+   34 |         static int s_retry_num = 0;
+      |                    ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:33:35: warning: 's_wifi_event_group' defined but not used [-Wunused-variable]
+   33 |         static EventGroupHandle_t s_wifi_event_group;
+      |                                   ^~~~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable bridge.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/7] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0x572d0 bytes. Smallest app partition is 0x100000 bytes. 0xa8d30 bytes (66%) free.

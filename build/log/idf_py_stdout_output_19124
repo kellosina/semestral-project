@@ -1,0 +1,47 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'eth_event_handler':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:208:18: warning: unused variable 'eth_netif' [-Wunused-variable]
+  208 |     esp_netif_t *eth_netif = (esp_netif_t *)arg;
+      |                  ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'eth_handler':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:233:28: warning: unused variable 'event' [-Wunused-variable]
+  233 |         ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+      |                            ^~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'spi_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:269:25: warning: unused variable 'spi_handle' [-Wunused-variable]
+  269 |     spi_device_handle_t spi_handle = NULL;
+      |                         ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:428:32: warning: unused variable 'netif_cfg' [-Wunused-variable]
+  428 |             esp_netif_config_t netif_cfg = {
+      |                                ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:392:22: warning: unused variable 'esp_netif_sta' [-Wunused-variable]
+  392 |         esp_netif_t *esp_netif_sta = wifi_init_sta();
+      |                      ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:230:13: warning: 'eth_handler' defined but not used [-Wunused-function]
+  230 | static void eth_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+      |             ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:184:13: warning: 'print_netif_ip_info' defined but not used [-Wunused-function]
+  184 | static void print_netif_ip_info(esp_netif_t *netif) {
+      |             ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:117:13: warning: 'restart_wifi' defined but not used [-Wunused-function]
+  117 | static void restart_wifi(void)
+      |             ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:37:20: warning: 'TAG_AP' defined but not used [-Wunused-variable]
+   37 | static const char *TAG_AP = "WiFi-AP";
+      |                    ^~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable bridge.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/7] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xdea80 bytes. Smallest app partition is 0x100000 bytes. 0x21580 bytes (13%) free.

@@ -1,0 +1,111 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'spi_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:579:25: warning: unused variable 'spi_handle' [-Wunused-variable]
+  579 |     spi_device_handle_t spi_handle = NULL;
+      |                         ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'create_eth_netif':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:669:24: warning: unused variable 'netif_cfg' [-Wunused-variable]
+  669 |     esp_netif_config_t netif_cfg = {
+      |                        ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:755:22: warning: unused variable 'esp_netif_ap' [-Wunused-variable]
+  755 |         esp_netif_t *esp_netif_ap = wifi_init_softap();
+      |                      ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:705:18: warning: 'initialize_flow_control' defined but not used [-Wunused-function]
+  705 | static esp_err_t initialize_flow_control(void)
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:524:23: warning: 'start_webserverSTA' defined but not used [-Wunused-function]
+  524 | static httpd_handle_t start_webserverSTA(void) {
+      |                       ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:165:13: warning: 'got_ip_event_handler' defined but not used [-Wunused-function]
+  165 | static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:63:18: warning: 'pkt_wifi2eth' defined but not used [-Wunused-function]
+   63 | static esp_err_t pkt_wifi2eth(void *buffer, uint16_t len, void *eb)
+      |                  ^~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable bridge.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/8] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xf6c30 bytes. Smallest app partition is 0x100000 bytes. 0x93d0 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[7/8] cmd.exe /C "cd /D D:\EspressifIDF\components\esptool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/EspressifIDF -D SERIAL_TOOL=D:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/EspressifIDF/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/EspressifIDF/workspace/bridge/build -Pesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 bridge.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:dc:c3:98:c3:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.5 seconds (effective 408.3 kbit/s)...
+Hash of data verified.
+Compressed 1010736 bytes to 621542...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e702... (5 %)
+Writing at 0x0002abcc... (7 %)
+Writing at 0x0003194b... (10 %)
+Writing at 0x00036a15... (13 %)
+Writing at 0x00041e46... (15 %)
+Writing at 0x000475dc... (18 %)
+Writing at 0x0004d55e... (21 %)
+Writing at 0x000532d6... (23 %)
+Writing at 0x000592f0... (26 %)
+Writing at 0x0005f267... (28 %)
+Writing at 0x00064cfb... (31 %)
+Writing at 0x00069e0f... (34 %)
+Writing at 0x0006f33f... (36 %)
+Writing at 0x0007474c... (39 %)
+Writing at 0x00079bd0... (42 %)
+Writing at 0x0007f2d0... (44 %)
+Writing at 0x00084b3a... (47 %)
+Writing at 0x0008ab3d... (50 %)
+Writing at 0x000905d3... (52 %)
+Writing at 0x00096295... (55 %)
+Writing at 0x0009be18... (57 %)
+Writing at 0x000a1b15... (60 %)
+Writing at 0x000a744a... (63 %)
+Writing at 0x000ad05e... (65 %)
+Writing at 0x000b3804... (68 %)
+Writing at 0x000b92b5... (71 %)
+Writing at 0x000bfa7b... (73 %)
+Writing at 0x000c54a5... (76 %)
+Writing at 0x000caf3c... (78 %)
+Writing at 0x000d0c2f... (81 %)
+Writing at 0x000daac3... (84 %)
+Writing at 0x000e29bd... (86 %)
+Writing at 0x000e8a6a... (89 %)
+Writing at 0x000f0253... (92 %)
+Writing at 0x000f5cc6... (94 %)
+Writing at 0x000fbd8f... (97 %)
+Writing at 0x00101992... (100 %)
+Wrote 1010736 bytes (621542 compressed) at 0x00010000 in 13.9 seconds (effective 580.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1366.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ D:/EspressifIDF/components/esptool_py/run_serial_tool.cmake"

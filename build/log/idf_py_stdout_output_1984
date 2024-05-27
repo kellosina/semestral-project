@@ -1,0 +1,104 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'restart_wifiAP':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:444:24: warning: unused variable 'esp_netif_ap' [-Wunused-variable]
+  444 |           esp_netif_t *esp_netif_ap = esp_netif_create_default_wifi_ap();
+      |                        ^~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'spi_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:657:25: warning: unused variable 'spi_handle' [-Wunused-variable]
+  657 |     spi_device_handle_t spi_handle = NULL;
+      |                         ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:835:22: warning: unused variable 'esp_netif_sta' [-Wunused-variable]
+  835 |         esp_netif_t *esp_netif_sta = wifi_init_sta();
+      |                      ^~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:616:13: warning: 'start_webserverAP' defined but not used [-Wunused-function]
+  616 | static void start_webserverAP(void)
+      |             ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:411:13: warning: 'create_bridge_eth_ap' defined but not used [-Wunused-function]
+  411 | static void create_bridge_eth_ap(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:41:20: warning: 'TAG_AP' defined but not used [-Wunused-variable]
+   41 | static const char *TAG_AP = "WiFi-AP";
+      |                    ^~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable bridge.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/8] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xdf470 bytes. Smallest app partition is 0x100000 bytes. 0x20b90 bytes (13%) free.
+[7/8] cmd.exe /C "cd /D D:\EspressifIDF\components\esptool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/EspressifIDF -D SERIAL_TOOL=D:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/EspressifIDF/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 bridge.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:dc:c3:9a:5d:68
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000effff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.5 seconds (effective 408.7 kbit/s)...
+Hash of data verified.
+Compressed 914544 bytes to 562861...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001eae8... (5 %)
+Writing at 0x00028eef... (8 %)
+Writing at 0x0002f16b... (11 %)
+Writing at 0x00035b84... (14 %)
+Writing at 0x00040cbc... (17 %)
+Writing at 0x000467d8... (20 %)
+Writing at 0x0004c617... (22 %)
+Writing at 0x000523c9... (25 %)
+Writing at 0x00058560... (28 %)
+Writing at 0x0005e53e... (31 %)
+Writing at 0x00063b84... (34 %)
+Writing at 0x00068df8... (37 %)
+Writing at 0x0006e39b... (40 %)
+Writing at 0x0007358d... (42 %)
+Writing at 0x00078cba... (45 %)
+Writing at 0x0007e376... (48 %)
+Writing at 0x0008404d... (51 %)
+Writing at 0x00089a75... (54 %)
+Writing at 0x0008f2ec... (57 %)
+Writing at 0x0009500b... (60 %)
+Writing at 0x0009ae64... (62 %)
+Writing at 0x000a0664... (65 %)
+Writing at 0x000a63c6... (68 %)
+Writing at 0x000ac82f... (71 %)
+Writing at 0x000b2e70... (74 %)
+Writing at 0x000b8839... (77 %)
+Writing at 0x000be47c... (80 %)
+Writing at 0x000c7771... (82 %)
+Writing at 0x000d0022... (85 %)
+Writing at 0x000d5ee9... (88 %)
+Writing at 0x000dbff7... (91 %)
+Writing at 0x000e19c2... (94 %)
+Writing at 0x000e8024... (97 %)
+Writing at 0x000ed25c... (100 %)
+Wrote 914544 bytes (562861 compressed) at 0x00010000 in 12.6 seconds (effective 581.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1293.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+D:/EspressifIDF/workspace/bridge/build -P D:/EspressifIDF/components/esptool_py/run_serial_tool.cmake"

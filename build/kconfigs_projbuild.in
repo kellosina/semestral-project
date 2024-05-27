@@ -1,0 +1,7 @@
+source "D:/EspressifIDF/components/bootloader/Kconfig.projbuild"
+source "D:/EspressifIDF/components/esp_app_format/Kconfig.projbuild"
+source "D:/EspressifIDF/components/esp_rom/Kconfig.projbuild"
+source "D:/EspressifIDF/components/esptool_py/Kconfig.projbuild"
+source "D:/EspressifIDF/components/partition_table/Kconfig.projbuild"
+source "D:/EspressifIDF/workspace/bridge/main/Kconfig.projbuild"
+source "D:/EspressifIDF/examples/ethernet/basic/components/ethernet_init/Kconfig.projbuild"

@@ -1,0 +1,77 @@
+[1/5] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xf8ca0 bytes. Smallest app partition is 0x100000 bytes. 0x7360 bytes (3%) free.
+Warning: The smallest app partition is nearly full (3% free space left)!
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\EspressifIDF\components\esptesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 bridge.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:dc:c3:98:c3:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00108fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.5 seconds (effective 405.9 kbit/s)...
+Hash of data verified.
+Compressed 1019040 bytes to 625766...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e821... (5 %)
+Writing at 0x0002b1b5... (7 %)
+Writing at 0x00032127... (10 %)
+Writing at 0x000370da... (12 %)
+Writing at 0x00041eac... (15 %)
+Writing at 0x00047622... (17 %)
+Writing at 0x0004d4cc... (20 %)
+Writing at 0x000532b8... (23 %)
+Writing at 0x00059475... (25 %)
+Writing at 0x0005f2aa... (28 %)
+Writing at 0x00064e7e... (30 %)
+Writing at 0x0006a0c2... (33 %)
+Writing at 0x0006f4fc... (35 %)
+Writing at 0x00074a04... (38 %)
+Writing at 0x00079dab... (41 %)
+Writing at 0x0007f416... (43 %)
+Writing at 0x00084db7... (46 %)
+Writing at 0x0008ad8c... (48 %)
+Writing at 0x00090793... (51 %)
+Writing at 0x000962eb... (53 %)
+Writing at 0x0009bf77... (56 %)
+Writing at 0x000a1e01... (58 %)
+Writing at 0x000a76ba... (61 %)
+Writing at 0x000ad386... (64 %)
+Writing at 0x000b3a40... (66 %)
+Writing at 0x000b9456... (69 %)
+Writing at 0x000bfc69... (71 %)
+Writing at 0x000c56d8... (74 %)
+Writing at 0x000cb0d4... (76 %)
+Writing at 0x000d0b93... (79 %)
+Writing at 0x000d7fc7... (82 %)
+Writing at 0x000e2080... (84 %)
+Writing at 0x000e8d11... (87 %)
+Writing at 0x000f0b54... (89 %)
+Writing at 0x000f6719... (92 %)
+Writing at 0x000fc152... (94 %)
+Writing at 0x00102516... (97 %)
+Writing at 0x001077f8... (100 %)
+Wrote 1019040 bytes (625766 compressed) at 0x00010000 in 14.0 seconds (effective 581.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1369.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/EspressifIDF -D SERIAL_TOOL=D:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/EspressifIDF/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/EspressifIDF/workspace/bridge/build -P D:/EspressifIDF/components/esptool_py/run_serial_tool.cmake"

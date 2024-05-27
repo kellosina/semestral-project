@@ -1,0 +1,229 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj 
+ccache D:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/EspressifIDF/workspace/bridge/build/config -ID:/EspressifIDF/workspace/bridge/main -ID:/EspressifIDF/components/newlib/platform_include -ID:/EspressifIDF/components/freertos/config/include -ID:/EspressifIDF/components/freertos/config/include/freertos -ID:/EspressifIDF/components/freertos/config/xtensa/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/EspressifIDF/components/freertos/esp_additions/include -ID:/EspressifIDF/components/esp_hw_support/include -ID:/EspressifIDF/components/esp_hw_support/include/soc -ID:/EspressifIDF/components/esp_hw_support/include/soc/esp32 -ID:/EspressifIDF/components/esp_hw_support/port/esp32/. -ID:/EspressifIDF/components/heap/include -ID:/EspressifIDF/components/log/include -ID:/EspressifIDF/components/soc/include -ID:/EspressifIDF/components/soc/esp32 -ID:/EspressifIDF/components/soc/esp32/include -ID:/EspressifIDF/components/hal/platform_port/include -ID:/EspressifIDF/components/hal/esp32/include -ID:/EspressifIDF/components/hal/include -ID:/EspressifIDF/components/esp_rom/include -ID:/EspressifIDF/components/esp_rom/include/esp32 -ID:/EspressifIDF/components/esp_rom/esp32 -ID:/EspressifIDF/components/esp_common/include -ID:/EspressifIDF/components/esp_system/include -ID:/EspressifIDF/components/esp_system/port/soc -ID:/EspressifIDF/components/esp_system/port/include/private -ID:/EspressifIDF/components/xtensa/esp32/include -ID:/EspressifIDF/components/xtensa/include -ID:/EspressifIDF/components/xtensa/deprecated_include -ID:/EspressifIDF/components/lwip/include -ID:/EspressifIDF/components/lwip/include/apps -ID:/EspressifIDF/components/lwip/include/apps/sntp -ID:/EspressifIDF/components/lwip/lwip/src/include -ID:/EspressifIDF/components/lwip/port/include -ID:/EspressifIDF/components/lwip/port/freertos/include -ID:/EspressifIDF/components/lwip/port/esp32xx/include -ID:/EspressifIDF/components/lwip/port/esp32xx/include/arch -ID:/EspressifIDF/components/lwip/port/esp32xx/include/sys -ID:/EspressifIDF/examples/ethernet/basic/components/ethernet_init -ID:/EspressifIDF/components/esp_ringbuf/include -ID:/EspressifIDF/components/efuse/include -ID:/EspressifIDF/components/efuse/esp32/include -ID:/EspressifIDF/components/esp_mm/include -ID:/EspressifIDF/components/driver/include -ID:/EspressifIDF/components/driver/deprecated -ID:/EspressifIDF/components/driver/analog_comparator/include -ID:/EspressifIDF/components/driver/dac/include -ID:/EspressifIDF/components/driver/gpio/include -ID:/EspressifIDF/components/driver/gptimer/include -ID:/EspressifIDF/components/driver/i2c/include -ID:/EspressifIDF/components/driver/i2s/include -ID:/EspressifIDF/components/driver/ledc/include -ID:/EspressifIDF/components/driver/mcpwm/include -ID:/EspressifIDF/components/driver/parlio/include -ID:/EspressifIDF/components/driver/pcnt/include -ID:/EspressifIDF/components/driver/rmt/include -ID:/EspressifIDF/components/driver/sdio_slave/include -ID:/EspressifIDF/components/driver/sdmmc/include -ID:/EspressifIDF/components/driver/sigma_delta/include -ID:/EspressifIDF/components/driver/spi/include -ID:/EspressifIDF/components/driver/temperature_sensor/include -ID:/EspressifIDF/components/driver/touch_sensor/include -ID:/EspressifIDF/components/driver/twai/include -ID:/EspressifIDF/components/driver/uart/include -ID:/EspressifIDF/components/driver/usb_serial_jtag/include -ID:/EspressifIDF/components/driver/touch_sensor/esp32/include -ID:/EspressifIDF/components/esp_pm/include -ID:/EspressifIDF/components/mbedtls/port/include -ID:/EspressifIDF/components/mbedtls/mbedtls/include -ID:/EspressifIDF/components/mbedtls/mbedtls/library -ID:/EspressifIDF/components/mbedtls/esp_crt_bundle/include -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/EspressifIDF/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/EspressifIDF/components/esp_bootloader_format/include -ID:/EspressifIDF/components/esp_app_format/include -ID:/EspressifIDF/components/bootloader_support/include -ID:/EspressifIDF/components/bootloader_support/bootloader_flash/include -ID:/EspressifIDF/components/esp_partition/include -ID:/EspressifIDF/components/app_update/include -ID:/EspressifIDF/components/spi_flash/include -ID:/EspressifIDF/components/pthread/include -ID:/EspressifIDF/components/esp_timer/include -ID:/EspressifIDF/components/app_trace/include -ID:/EspressifIDF/components/esp_event/include -ID:/EspressifIDF/components/nvs_flash/include -ID:/EspressifIDF/components/esp_phy/include -ID:/EspressifIDF/components/esp_phy/esp32/include -ID:/EspressifIDF/components/vfs/include -ID:/EspressifIDF/components/esp_netif/include -ID:/EspressifIDF/components/wpa_supplicant/include -ID:/EspressifIDF/components/wpa_supplicant/port/include -ID:/EspressifIDF/components/wpa_supplicant/esp_supplicant/include -ID:/EspressifIDF/components/esp_coex/include -ID:/EspressifIDF/components/esp_wifi/include -ID:/EspressifIDF/components/esp_wifi/wifi_apps/include -ID:/EspressifIDF/components/unity/include -ID:/EspressifIDF/components/unity/unity/src -ID:/EspressifIDF/components/cmock/CMock/src -ID:/EspressifIDF/components/console -ID:/EspressifIDF/components/http_parser -ID:/EspressifIDF/components/esp-tls -ID:/EspressifIDF/components/esp-tls/esp-tls-crypto -ID:/EspressifIDF/components/esp_adc/include -ID:/EspressifIDF/components/esp_adc/interface -ID:/EspressifIDF/components/esp_adc/esp32/include -ID:/EspressifIDF/components/esp_adc/deprecated/include -ID:/EspressifIDF/components/esp_eth/include -ID:/EspressifIDF/components/esp_gdbstub/include -ID:/EspressifIDF/components/esp_hid/include -ID:/EspressifIDF/components/tcp_transport/include -ID:/EspressifIDF/components/esp_http_client/include -ID:/EspressifIDF/components/esp_http_server/include -ID:/EspressifIDF/components/esp_https_ota/include -ID:/EspressifIDF/components/esp_psram/include -ID:/EspressifIDF/components/esp_lcd/include -ID:/EspressifIDF/components/esp_lcd/interface -ID:/EspressifIDF/components/protobuf-c/protobuf-c -ID:/EspressifIDF/components/protocomm/include/common -ID:/EspressifIDF/components/protocomm/include/security -ID:/EspressifIDF/components/protocomm/include/transports -ID:/EspressifIDF/components/protocomm/include/crypto/srp6a -ID:/EspressifIDF/components/esp_local_ctrl/include -ID:/EspressifIDF/components/espcoredump/include -ID:/EspressifIDF/components/espcoredump/include/port/xtensa -ID:/EspressifIDF/components/wear_levelling/include -ID:/EspressifIDF/components/sdmmc/include -ID:/EspressifIDF/components/fatfs/diskio -ID:/EspressifIDF/components/fatfs/src -ID:/EspressifIDF/components/fatfs/vfs -ID:/EspressifIDF/components/idf_test/include -ID:/EspressifIDF/components/idf_test/include/esp32 -ID:/EspressifIDF/components/ieee802154/include -ID:/EspressifIDF/components/json/cJSON -ID:/EspressifIDF/components/mqtt/esp-mqtt/include -ID:/EspressifIDF/components/nvs_sec_provider/include -ID:/EspressifIDF/components/perfmon/include -ID:/EspressifIDF/components/spiffs/include -ID:/EspressifIDF/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/EspressifIDF/workspace/bridge=. -fmacro-prefix-map=D:/EspressifIDF=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\bridge_example_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj -c D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'wifi_event_handler':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:36:23: error: 'WIFI_EVENT' undeclared (first use in this function); did you mean 'IP_EVENT'?
+   36 |     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+      |                       ^~~~~~~~~~
+      |                       IP_EVENT
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:36:23: note: each undeclared identifier is reported only once for each function it appears in
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:36:49: error: 'WIFI_EVENT_STA_START' undeclared (first use in this function)
+   36 |     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+      |                                                 ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:37:9: error: implicit declaration of function 'esp_wifi_connect'; did you mean 'lwip_connect'? [-Werror=implicit-function-declaration]
+   37 |         esp_wifi_connect();
+      |         ^~~~~~~~~~~~~~~~
+      |         lwip_connect
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:38:56: error: 'WIFI_EVENT_STA_DISCONNECTED' undeclared (first use in this function)
+   38 |     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:10:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:9: note: in expansion of macro 'ESP_LOGI'
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+In file included from D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip_addr.h:43,
+                 from D:/EspressifIDF/components/lwip/lwip/src/include/lwip/inet.h:45,
+                 from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:16:
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:9: note: in expansion of macro 'ESP_LOGI'
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:9: note: in expansion of macro 'ESP_LOGI'
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:9: note: in expansion of macro 'ESP_LOGI'
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:440:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:49:9: note: in expansion of macro 'ESP_LOGI'
+   49 |         ESP_LOGI(TAG, "got ip:%s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'wifi_init_sta':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:34: error: implicit declaration of function 'esp_netif_create_default_wifi_sta'; did you mean 'esp_netif_get_default_netif'? [-Werror=implicit-function-declaration]
+   81 |     esp_netif_t *esp_netif_sta = esp_netif_create_default_wifi_sta();
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  esp_netif_get_default_netif
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:81:34: warning: initialization of 'esp_netif_t *' {aka 'struct esp_netif_obj *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:83:5: error: unknown type name 'wifi_config_t'; did you mean 'spi_bus_config_t'?
+   83 |     wifi_config_t wifi_sta_config = {
+      |     ^~~~~~~~~~~~~
+      |     spi_bus_config_t
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:84:9: error: field name not in record or union initializer
+   84 |         .sta = {
+      |         ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:84:9: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:84:9: warning: braces around scalar initializer
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:84:9: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:85:13: error: field name not in record or union initializer
+   85 |             .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |             ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:85:13: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:85:21: warning: initialization of 'int' from 'const char *' makes integer from pointer without a cast [-Wint-conversion]
+   85 |             .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:85:21: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:13: error: field name not in record or union initializer
+   86 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |             ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:13: note: (near initialization for 'wifi_sta_config')
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:25: warning: excess elements in scalar initializer
+   86 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:86:25: note: (near initialization for 'wifi_sta_config')
+In file included from D:/EspressifIDF/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from D:/EspressifIDF/components/esp_hw_support/include/esp_cpu.h:20,
+                 from D:/EspressifIDF/components/esp_hw_support/include/spinlock.h:11,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from D:/EspressifIDF/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:3:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:90:21: error: implicit declaration of function 'esp_wifi_set_mode' [-Werror=implicit-function-declaration]
+   90 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                     ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:90:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+   90 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                                       ^~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:91:21: error: implicit declaration of function 'esp_wifi_set_config' [-Werror=implicit-function-declaration]
+   91 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_sta_config));
+      |                     ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:91:41: error: 'ESP_IF_WIFI_STA' undeclared (first use in this function); did you mean 'ESP_MAC_WIFI_STA'?
+   91 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_sta_config));
+      |                                         ^~~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:189:48: error: 'WIFI_EVENT' undeclared (first use in this function); did you mean 'IP_EVENT'?
+  189 |     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL));
+      |                                                ^~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:193:5: error: unknown type name 'wifi_init_config_t'
+  193 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:193:30: error: implicit declaration of function 'WIFI_INIT_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  193 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:194:21: error: implicit declaration of function 'esp_wifi_init'; did you mean 'esp_netif_init'? [-Werror=implicit-function-declaration]
+  194 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |                     ^~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:195:21: error: implicit declaration of function 'esp_wifi_set_storage' [-Werror=implicit-function-declaration]
+  195 |     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:195:42: error: 'WIFI_STORAGE_RAM' undeclared (first use in this function)
+  195 |     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+      |                                          ^~~~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:196:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+  196 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |                                       ^~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:202:21: error: implicit declaration of function 'esp_wifi_start'; did you mean 'esp_eth_start'? [-Werror=implicit-function-declaration]
+  202 |     ESP_ERROR_CHECK(esp_wifi_start());
+      |                     ^~~~~~~~~~~~~~
+D:/EspressifIDF/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:228:84: error: expected expression before ')' token
+  228 |     example_register_br_config_commands(br_netif, /* Number of bridge ports here */);
+      |                                                                                    ^
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:28:20: warning: 'TAG_AP' defined but not used [-Wunused-variable]
+   28 | static const char *TAG_AP = "WiFi SoftAP";
+      |                    ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:27:20: warning: 'TAG_STA' defined but not used [-Wunused-variable]
+   27 | static const char *TAG_STA = "WiFi Sta";
+      |                    ^~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

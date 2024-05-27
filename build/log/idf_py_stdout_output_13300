@@ -1,0 +1,300 @@
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+In file included from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:11:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'print_netif_ip_info':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |                                                 ^~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:9: note: in expansion of macro 'ESP_LOGI'
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |         ^~~~~~~~
+In file included from D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip_addr.h:43,
+                 from D:/EspressifIDF/components/lwip/lwip/src/include/lwip/inet.h:45,
+                 from D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:19:
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |                                                 ^~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:9: note: in expansion of macro 'ESP_LOGI'
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |                                                 ^~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:9: note: in expansion of macro 'ESP_LOGI'
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |                                                 ^~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:9: note: in expansion of macro 'ESP_LOGI'
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:49: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |                                                 ^~~~~~~~~~~
+      |                                                 |
+      |                                                 esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:440:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:60:9: note: in expansion of macro 'ESP_LOGI'
+   60 |         ESP_LOGI(TAG, " - IP: %s", ip4addr_ntoa(&ip_info.ip));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |                                                      ^~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |                                                      ^~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |                                                      ^~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |                                                      ^~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |                                                      ^~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:440:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, " - Netmask: %s", ip4addr_ntoa(&ip_info.netmask));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |                                                      ^~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:9: note: in expansion of macro 'ESP_LOGI'
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |                                                      ^~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:9: note: in expansion of macro 'ESP_LOGI'
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |                                                      ^~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:9: note: in expansion of macro 'ESP_LOGI'
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |                                                      ^~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:9: note: in expansion of macro 'ESP_LOGI'
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:54: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |                                                      ^~~~~~~~~~~
+      |                                                      |
+      |                                                      esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/EspressifIDF/components/log/include/esp_log.h:440:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/EspressifIDF/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:62:9: note: in expansion of macro 'ESP_LOGI'
+   62 |         ESP_LOGI(TAG, " - Gateway: %s", ip4addr_ntoa(&ip_info.gw));
+      |         ^~~~~~~~
+D:/EspressifIDF/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'eth_handler':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:106:28: warning: unused variable 'event' [-Wunused-variable]
+  106 |         ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+      |                            ^~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'spi_init':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:142:25: warning: unused variable 'spi_handle' [-Wunused-variable]
+  142 |     spi_device_handle_t spi_handle = NULL;
+      |                         ^~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: In function 'app_main':
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:303:32: warning: unused variable 'netif_cfg' [-Wunused-variable]
+  303 |             esp_netif_config_t netif_cfg = {
+      |                                ^~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c: At top level:
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:103:13: warning: 'eth_handler' defined but not used [-Wunused-function]
+  103 | static void eth_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+      |             ^~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:40:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+   40 | static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+      |             ^~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:35:20: warning: 'TAG_AP' defined but not used [-Wunused-variable]
+   35 | static const char *TAG_AP = "WiFi-AP";
+      |                    ^~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:34:20: warning: 'TAG_STA' defined but not used [-Wunused-variable]
+   34 | static const char *TAG_STA = "WiFi-Sta";
+      |                    ^~~~~~~
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable bridge.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/7] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0x5d830 bytes. Smallest app partition is 0x100000 bytes. 0xa27d0 bytes (63%) free.

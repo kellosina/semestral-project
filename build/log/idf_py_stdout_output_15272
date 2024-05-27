@@ -1,0 +1,71 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Checking Python dependencies...
+Python requirements are satisfied.
+Constraint file: D:\Espressif\espidf.constraints.v5.2.txt
+Requirement files:
+ - D:\EspressifIDF\tools\requirements\requirements.core.txt
+Python being checked: D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe
+Processing 2 dependencies:
+[1/2] ethernet_init (*)
+[2/2] idf (5.2.1)
+-- Project sdkconfig file D:/EspressifIDF/workspace/bridge/sdkconfig
+Loading defaults file D:/EspressifIDF/workspace/bridge/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- App "bridge" version: v5.2.1-dirty
+-- Adding linker script D:/EspressifIDF/workspace/bridge/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/EspressifIDF/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/EspressifIDF/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py ethernet_init fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/EspressifIDF/components/app_trace D:/EspressifIDF/components/app_update D:/EspressifIDF/components/bootloader D:/EspressifIDF/components/bootloader_support D:/EspressifIDF/components/bt D:/EspressifIDF/components/cmock D:/EspressifIDF/components/console D:/EspressifIDF/components/cxx D:/EspressifIDF/components/driver D:/EspressifIDF/components/efuse D:/EspressifIDF/components/esp-tls D:/EspressifIDF/components/esp_adc D:/EspressifIDF/components/esp_app_format D:/EspressifIDF/components/esp_bootloader_format D:/EspressifIDF/components/esp_coex D:/EspressifIDF/components/esp_common D:/EspressifIDF/components/esp_eth D:/EspressifIDF/components/esp_event D:/EspressifIDF/components/esp_gdbstub D:/EspressifIDF/components/esp_hid D:/EspressifIDF/components/esp_http_client D:/EspressifIDF/components/esp_http_server D:/EspressifIDF/components/esp_https_ota D:/EspressifIDF/components/esp_https_server D:/EspressifIDF/components/esp_hw_support D:/EspressifIDF/components/esp_lcd D:/EspressifIDF/components/esp_local_ctrl D:/EspressifIDF/components/esp_mm D:/EspressifIDF/components/esp_netif D:/EspressifIDF/components/esp_netif_stack D:/EspressifIDF/components/esp_partition D:/EspressifIDF/components/esp_phy D:/EspressifIDF/components/esp_pm D:/EspressifIDF/components/esp_psram D:/EspressifIDF/components/esp_ringbuf D:/EspressifIDF/components/esp_rom D:/EspressifIDF/components/esp_system D:/EspressifIDF/components/esp_timer D:/EspressifIDF/components/esp_wifi D:/EspressifIDF/components/espcoredump D:/EspressifIDF/components/esptool_py D:/EspressifIDF/examples/ethernet/basic/components/ethernet_init D:/EspressifIDF/components/fatfs D:/EspressifIDF/components/freertos D:/EspressifIDF/components/hal D:/EspressifIDF/components/heap D:/EspressifIDF/components/http_parser D:/EspressifIDF/components/idf_test D:/EspressifIDF/components/ieee802154 D:/EspressifIDF/components/json D:/EspressifIDF/components/log D:/EspressifIDF/components/lwip D:/EspressifIDF/workspace/bridge/main D:/EspressifIDF/components/mbedtls D:/EspressifIDF/components/mqtt D:/EspressifIDF/components/newlib D:/EspressifIDF/components/nvs_flash D:/EspressifIDF/components/nvs_sec_provider D:/EspressifIDF/components/openthread D:/EspressifIDF/components/partition_table D:/EspressifIDF/components/perfmon D:/EspressifIDF/components/protobuf-c D:/EspressifIDF/components/protocomm D:/EspressifIDF/components/pthread D:/EspressifIDF/components/sdmmc D:/EspressifIDF/components/soc D:/EspressifIDF/components/spi_flash D:/EspressifIDF/components/spiffs D:/EspressifIDF/components/tcp_transport D:/EspressifIDF/components/ulp D:/EspressifIDF/components/unity D:/EspressifIDF/components/usb D:/EspressifIDF/components/vfs D:/EspressifIDF/components/wear_levelling D:/EspressifIDF/components/wifi_provisioning D:/EspressifIDF/components/wpa_supplicant D:/EspressifIDF/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/EspressifIDF/workspace/bridge/build
+[0/1] Re-running CMake...
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bridge_example_main.c.obj
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:166:13: warning: 'example_wifi_init' defined but not used [-Wunused-function]
+  166 | static void example_wifi_init(void)
+      |             ^~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:103:13: warning: 'got_ip_event_handler' defined but not used [-Wunused-function]
+  103 | static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~~~~
+D:/EspressifIDF/workspace/bridge/main/bridge_example_main.c:74:13: warning: 'eth_event_handler' defined but not used [-Wunused-function]
+   74 | static void eth_event_handler(void *arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/EspressifIDF/workspace/bridge/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script D:/EspressifIDF/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/EspressifIDF/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/EspressifIDF/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script D:/EspressifIDF/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: D:/EspressifIDF/components/bootloader D:/EspressifIDF/components/bootloader_support D:/EspressifIDF/components/efuse D:/EspressifIDF/components/esp_app_format D:/EspressifIDF/components/esp_bootloader_format D:/EspressifIDF/components/esp_common D:/EspressifIDF/components/esp_hw_support D:/EspressifIDF/components/esp_rom D:/EspressifIDF/components/esp_system D:/EspressifIDF/components/esptool_py D:/EspressifIDF/components/freertos D:/EspressifIDF/components/hal D:/EspressifIDF/components/log D:/EspressifIDF/components/bootloader/subproject/main D:/EspressifIDF/components/bootloader/subproject/components/micro-ecc D:/EspressifIDF/components/newlib D:/EspressifIDF/components/partition_table D:/EspressifIDF/components/soc D:/EspressifIDF/components/spi_flash D:/EspressifIDF/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/EspressifIDF/workspace/bridge/build/bootloader
+[0/1] Re-running CMake...
+[1/1] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/EspressifIDF/workspace/bridge/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable bridge.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/EspressifIDF/workspace/bridge/build/bridge.bin
+[7/7] cmd.exe /C "cd /D D:\EspressifIDF\workspace\bridge\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/EspressifIDF/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/EspressifIDF/workspace/bridge/build/partition_table/partition-table.bin D:/EspressifIDF/workspace/bridge/build/bridge.bin"
+bridge.bin binary size 0xbe920 bytes. Smallest app partition is 0x100000 bytes. 0x416e0 bytes (26%) free.

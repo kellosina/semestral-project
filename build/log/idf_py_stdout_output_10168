@@ -1,0 +1,606 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (498) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF file SHA256: e1bd8372d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 12 2024 18:08:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2b120h (176416) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=0003b148 vaddr=3ffb0000 size=03d7ch ( 15740) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003eecc vaddr=40080000 size=0114ch (  4428) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a290h (631440) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000da2b8 vaddr=4008114c size=18c80h (101504) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (471) cpu_start: Project name:     bridge[0m
+[0;32mI (476) cpu_start: App version:      v5.2.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 13 2024 17:21:42[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  e1bd8372d...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB7F40 len 000280C0 (160 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40099DCC len 00006234 (24 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;31mE (683) esp.emac: emac_esp32_init(368): reset timeout[0m
+[0;31mE (683) esp_eth: esp_eth_driver_install(228): init mac failed[0m
+[0;31mE (683) example_eth_init: eth_init_internal(96): Ethernet driver install failed[0m
+[0;31mE (683) example_eth_init: example_eth_init(254): internal Ethernet init failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d7475
+file: "/IDF/workspace/bridge/main/bridge_example_main.c" line 128
+func: app_main
+expression: example_eth_init(&eth_handles, &eth_port_cnt)
+
+abort() was called at PC 0x4008b5f3 on core 0
+
+
+Backtrace: 0x40081a56:0x3ffba050 0x4008b5fd:0x3ffba070 0x40093fed:0x3ffba090 0x4008b5f3:0x3ffba100 0x400d7475:0x3ffba130 0x401681df:0x3ffba240 0x4008c1c5:0x3ffba270
+
+
+
+
+ELF
